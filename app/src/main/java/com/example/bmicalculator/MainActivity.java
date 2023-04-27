@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button one, two, three, four, five, six, seven, eight, nine;
     TextView equation;
-    String eq;
+    String eq = "";
 
     //@SuppressLint("MissingInflatedId")
     @Override
