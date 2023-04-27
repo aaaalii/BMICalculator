@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                eq = "1";
+                eq += "1";
                 equation.setText(eq);
             }
         });
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                eq.concat("2");
+                eq = eq.concat("2");
                 equation.setText(eq);
             }
         });
@@ -51,7 +51,55 @@ public class MainActivity extends AppCompatActivity {
         three.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                eq.concat("3");
+                eq = eq.concat("3");
+                equation.setText(eq);
+            }
+        });
+
+        four.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("4");
+                equation.setText(eq);
+            }
+        });
+
+        five.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("5");
+                equation.setText(eq);
+            }
+        });
+
+        six.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("6");
+                equation.setText(eq);
+            }
+        });
+
+        seven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("7");
+                equation.setText(eq);
+            }
+        });
+
+        eight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("8");
+                equation.setText(eq);
+            }
+        });
+
+        nine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("9");
                 equation.setText(eq);
             }
         });

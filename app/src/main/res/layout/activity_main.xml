@@ -41,8 +41,8 @@
 
     <Button
         android:id="@+id/two"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
         android:layout_marginStart="140dp"
         android:layout_marginTop="320dp"
         android:text="2"
@@ -101,8 +101,8 @@
 
     <Button
         android:id="@+id/one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="320dp"
         android:text="1"
@@ -117,6 +117,57 @@
         android:layout_marginEnd="204dp"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="264dp"
+        android:text="+"
+        android:textSize = "20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="264dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="264dp"
+        android:text="*"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="264dp"
+        android:text="/"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="264dp"
+        android:text="="
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
