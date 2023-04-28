@@ -11,9 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button one, two, three, four, five, six, seven, eight, nine;
+    Button one, two, three, four, five, six, seven, eight, nine, add, subtract, multiply, divide, equal;
     TextView equation;
     String eq = "";
+    String Final;
 
     //@SuppressLint("MissingInflatedId")
     @Override
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
         eight = findViewById(R.id.eight);
         nine = findViewById(R.id.nine);
         equation = findViewById(R.id.equation);
+        add = findViewById(R.id.add);
+        subtract = findViewById(R.id.subtract);
+        multiply = findViewById(R.id.multiply);
+        divide = findViewById(R.id.divide);
+        equal = findViewById(R.id.equal);
 
         one.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,10 +110,44 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("+");
+                equation.setText(eq);
+            }
+        });
 
+        subtract.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("-");
+                equation.setText(eq);
+            }
+        });
 
+        multiply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("*");
+                equation.setText(eq);
+            }
+        });
 
+        divide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                eq = eq.concat("/");
+                equation.setText(eq);
+            }
+        });
 
+        equal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Final = (String) equation.getText();
+            }
+        });
     }
 
 
